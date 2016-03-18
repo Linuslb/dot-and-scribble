@@ -1,0 +1,105 @@
+.square{
+  background-color: #E0E4CC;
+  width:30px;
+  height:30px;
+  display:block;
+  float:left;
+  border:1px solid #7e7e7e;
+}
+
+#wrapper{
+  padding: 30px;
+  width: 660px;
+  margin:0 auto;
+  text-align: center;
+}
+
+#container{
+  margin-top: 30px;
+  width:660px;
+  height:660px;
+}
+
+#wrapper p{
+  font-family: 'Indie Flower', cursive;
+  font-size:4em;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+
+
+button:focus {outline:0;}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.1s;
+    border-radius: 5px;
+}
+
+.button:hover{
+  background-color: #3d8b40;
+}
+
+.active{
+  box-shadow: inset 19px 17px 53px 8px rgba(39,87,0,0.68);
+}
+
+
+/* Color selector css */
+
+#colorSelector{
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    border:1px solid black;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+  border:3px solid green;
+}
+
+/* Here comes all color options */
+
+input[type="radio"][value="#fff"] + label span {
+  background:#fff;
+}
+
+input[type="radio"][value="#000"] + label span {
+  background:#000;
+}
+
+input[type="radio"][value="red"] + label span {
+  background:red;
+}
+
+input[type="radio"][value="green"] + label span {
+  background:green;
+}
+
+input[type="radio"][value="blue"] + label span {
+  background:blue;
+}
+
+input[type="radio"][value="#E0E4CC"] + label span {
+  background:#E0E4CC;
+}
+
+
+/* End of color options */
